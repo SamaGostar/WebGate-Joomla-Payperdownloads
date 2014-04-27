@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" method="upgrade" type="plugin" group="payperdownloadplus">
+	<name>PayperDownloadPlus - Kunena</name>
+	<version>2.5</version>
+	<creationDate>March 2012</creationDate>
+	<author>Ratmil</author>
+	<authorUrl>www.ratmilwebsolutions.com</authorUrl>
+	<license>GNU GPL</license>
+	<languages>
+		<language tag="en-GB">en-GB.plg_payperdownloadplus_kunena.ini</language>
+	</languages>
+	<files>
+		<filename plugin="kunena">kunena.php</filename>
+		<filename>kunena.jpg</filename>
+		<filename>index.html</filename>
+	</files>
+</install>

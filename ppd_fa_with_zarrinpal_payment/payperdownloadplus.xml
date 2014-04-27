@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" method="upgrade" type="component">
+<name>Payperdownloadplus</name>
+  <creationDate>December, 2013</creationDate>
+  <version>2.5.47</version>
+  <author>Ratmil</author>
+  <authorUrl>www.ratmilwebsolutions.com</authorUrl>
+    <description><![CDATA[<table><tr><td></td><td><font color="#006699"> RmJoomla تقديم ميکند: </font>&nbsp&nbsp&nbsp
+	<span style="color: #0783FF">سیستم Payperdownloads متصل به درگاه زرین پال</span> <img style="float: left; position: absolute; margin: 30px 400px 30px 0px;" src="http://www.rmjoomla.ir/images/logo.png" />
+<br>	_____________________________________________________________________________<br><br>
+RmJoomla مرکز ارائه خدمات وب براي طراحان وب مي باشد.<br/>
+<strong style="font-size: 14px">خدمات:</strong><ul>
+<li style="color: blue">طراحي افزونه هاي جوملا در سريع ترين زمان و با تکنيک هاي مدرن</li>
+<li style="color: green">طراحي قالب هاي اختصاصي جوملا متناسب با سليقه ايراني</li>
+<li style="color: red">ارائه انواع واسط هاي پرداخت براي سايت هاي جوملايي</li>
+</ul>
+<strong>    وبسايت:<a href="http://www.rmjoomla.ir" target="_blank"> www.rmjoomla.ir </a>  &nbsp&nbsp&nbsp   ايميل پشتيباني: MSDN.1223@Gmail.com </strong> 
+</td></tr></table>]]>
+	</description>
+  <license>GNU GPL</license>
+  <uninstall>
+	<sql>
+	<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+	</sql>
+  </uninstall>
+   <installfile>install.payperdownloadplus.php</installfile>
+   <uninstallfile>uninstall.payperdownloadplus.php</uninstallfile>
+   <administration>
+    <menu img="components/com_payperdownloadplus/images/ppdplus16.png">COM_PAYPERDOWNLOADPLUS</menu>
+	<submenu>
+	  <menu img="components/com_payperdownloadplus/images/resources16.png" link="option=com_payperdownloadplus&amp;adminpage=resources">COM_PAYPERDOWNLOADPLUS_RESOURCES</menu>
+	  <menu img="components/com_payperdownloadplus/images/licenses16.png" link="option=com_payperdownloadplus&amp;adminpage=licenses">COM_PAYPERDOWNLOADPLUS_LICENSES</menu>
+      <menu img="components/com_payperdownloadplus/images/users16.png" link="option=com_payperdownloadplus&amp;adminpage=users">COM_PAYPERDOWNLOADPLUS_USERS_LICENCES</menu>
+	  <menu img="components/com_payperdownloadplus/images/download16.png" link="option=com_payperdownloadplus&amp;adminpage=downloads">COM_PAYPERDOWNLOADPLUS_DOWNLOAD_LINKS</menu>
+	  <menu img="components/com_payperdownloadplus/images/payments16.png" link="option=com_payperdownloadplus&amp;adminpage=orders">COM_PAYPERDOWNLOADPLUS_PAYMENTS</menu>
+	  <menu img="components/com_payperdownloadplus/images/icon-16-config.png" link="option=com_payperdownloadplus&amp;adminpage=config">COM_PAYPERDOWNLOADPLUS_CONFIGURATION</menu>
+	  <menu img="components/com_payperdownloadplus/images/backup16.png" link="option=com_payperdownloadplus&amp;adminpage=backup">COM_PAYPERDOWNLOADPLUS_BACKUP</menu>
+	  <menu img="components/com_payperdownloadplus/images/icon-16-help.png" link="option=com_payperdownloadplus&amp;adminpage=about">COM_PAYPERDOWNLOADPLUS_ABOUT</menu>
+    </submenu>
+    <files>
+	<filename>index.html</filename>
+	<filename>config.xml</filename>
+	<filename>install.payperdownloadplus.php</filename>
+	<filename>uninstall.payperdownloadplus.php</filename>
+	<filename>install.mysql.sql</filename>
+	<filename>install.cons.mysql.sql</filename>
+	<filename>install.changes.mysql.sql</filename>
+	<filename>uninstall.mysql.sql</filename>
+	<filename>import.php</filename>
+	<filename>export.php</filename>
+	<filename>admin.payperdownloadplus.php</filename>
+	<filename>toolbar.payperdownloadplus.php</filename>
+	<folder>admin</folder>
+	<folder>html</folder>
+	<folder>jfields</folder>
+	<folder>elements</folder>
+	<folder>classes</folder>
+	<filename>css/backend.css</filename>
+	<filename>css/stat.css</filename>
+	<filename>css/index.html</filename>
+	<filename>data/gentable.php</filename>
+	<filename>data/index.html</filename>
+	<filename>js/ajax_source.js</filename>
+	<filename>js/excombo.js</filename>
+	<filename>js/resources3.js</filename>
+	<filename>js/index.html</filename>
+	<folder>images</folder>
+	<folder>extensions</folder>
+	</files>
+	<languages folder="language/admin">
+        <language tag="en-GB">en-GB.com_payperdownloadplus.ini</language>
+		<language tag="fa-IR">fa-IR.com_payperdownloadplus.ini</language>
+		<language tag="es-ES">es-ES.com_payperdownloadplus.ini</language>
+		<language tag="en-GB">en-GB.com_payperdownloadplus.menu.ini</language>
+		<language tag="es-ES">es-ES.com_payperdownloadplus.menu.ini</language>
+		<language tag="en-GB">en-GB.com_payperdownloadplus.sys.ini</language>
+        <language tag="es-ES">es-ES.com_payperdownloadplus.sys.ini</language>
+		<language tag="fa-IR">fa-IR.com_payperdownloadplus.sys.ini</language>
+	</languages>
+  </administration>
+  <files>
+	<filename>controller.php</filename>
+	<filename>payperdownloadplus.php</filename>
+	<filename>index.html</filename>
+	<folder>models</folder>
+	<filename>css/frontend.css</filename>
+	<filename>css/zarrinpal.jpeg</filename>
+	<filename>css/index.html</filename>
+	<folder>views</folder>
+	<folder>helpers</folder>
+	<filename>js/pay.js</filename>
+	<filename>js/index.html</filename>
+	<filename>language/index.html</filename>
+	<filename>router.php</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB.com_payperdownloadplus.ini</language>
+	<language tag="fa-IR">fa-IR.com_payperdownloadplus.ini</language>
+	<language tag="es-ES">es-ES.com_payperdownloadplus.ini</language>
+	<language tag="en-GB">en-GB.com_payperdownloadplus.sys.ini</language>
+    <language tag="es-ES">es-ES.com_payperdownloadplus.sys.ini</language>
+	<language tag="fa-IR">fa-IR.com_payperdownloadplus.sys.ini</language>
+  </languages>
+</install>	
