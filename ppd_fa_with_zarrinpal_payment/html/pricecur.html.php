@@ -80,7 +80,7 @@ class PriceCurrencyVisualDataBind extends VisualDataBind
 		$currencies = array("USD", 
 			"AUD", "BRL", "CAD", "CZK", "DKK", 
 			"EUR", "HKD", "HUF", "ILS", "JPY", "MYR", "MXN", "NOK", "PHP", "PLN",
-			"GBP", "SGD", "SEK", "CHF", "TWD", "THB");
+			"GBP", "SGD", "SEK", "CHF", "TWD", "THB","IRR");
 		$html = "<select name=\"$dataField\" id=\"$dataField\">";
 		foreach($currencies as $currency)
 		{
